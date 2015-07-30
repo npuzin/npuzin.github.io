@@ -1,0 +1,47 @@
+<html np-controller="CalculatorController">
+  <head>
+    <script src="lib/lib.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body  np-keydown="keyDown($event)" np-keyPress="keyPress($event)">
+
+    <div class="container">
+     <table class="calculator">
+      <tr>
+        <td class="screen" colspan="4" np-bind="calculator.getCalculation()"></td>
+      </tr>
+      <tr>
+        <td class="key" np-click="keyPressed('C')">C</td>
+        <td class="key" np-click="keyPressed('(')">(</td>
+        <td class="key" np-click="keyPressed(')')">)</td>
+        <td class="key" np-click="keyPressed('/')">/</td>
+      </tr>
+      <tr>
+        <td class="key" np-click="keyPressed('7')">7</td>
+        <td class="key" np-click="keyPressed('8')">8</td>
+        <td class="key" np-click="keyPressed('9')">9</td>
+        <td class="key" np-click="keyPressed('*')">*</td>
+      </tr>
+      <tr>
+        <td class="key" np-click="keyPressed('4')">4</td>
+        <td class="key" np-click="keyPressed('5')">5</td>
+        <td class="key" np-click="keyPressed('6')">6</td>
+        <td class="key" np-click="keyPressed('-')">-</td>
+      </tr>
+      <tr>
+        <td class="key" np-click="keyPressed('1')">1</td>
+        <td class="key" np-click="keyPressed('2')">2</td>
+        <td class="key" np-click="keyPressed('3')">3</td>
+        <td class="key" np-click="keyPressed('+')">+</td>
+      </tr>
+      <tr>
+        <td class="key" colspan="2" np-click="keyPressed('0')">0</td>
+        <td class="key" np-click="keyPressed('.')">.</td>
+        <td class="key bold" np-click="keyPressed('=')">=</td>
+      </tr>
+     </table>
+    </div>
+  </body>
+</html>
+<script src="calculator-controller.js"></script>
+<script src="calculator.js"></script>
