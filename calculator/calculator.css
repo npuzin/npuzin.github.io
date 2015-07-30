@@ -2,10 +2,6 @@ body, table {
   font-family: arial;
 }
 
-body {
-  padding:20px;
-}
-
 .key {
   cursor: pointer;
 }
@@ -36,11 +32,34 @@ body {
   border-spacing : 6px;
 }
 
+@media screen and (min-width: 400px) {
+
+  .container {
+    box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    width: 200px;
+    border-radius: 4px;
+  }
+
+  body {
+    padding:20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .container {
+    width: 100%;
+    box-sizing:border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .container {
-  box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+
   border: solid 1px #cdcdcd;
-  width: 200px;
   padding: 6px;
-  border-radius: 4px;
   background: linear-gradient(to bottom, #f2f6f8 0%,#e0eff9 100%);
 }

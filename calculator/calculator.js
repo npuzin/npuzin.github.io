@@ -2,15 +2,15 @@ function Calculator() {
 
   var calculation = '0';
 
-	var calculate = function() {
-		try {
+  var calculate = function() {
+    try {
       calculation = eval(calculation);
     }
     catch(err) {
       console.error('Error:',err);
       calculation = '#ERROR';
     }
-	};
+  };
 
   var clear = function() {
     calculation = '0';
@@ -27,10 +27,10 @@ function Calculator() {
     return calculation;
   }
 
-	return {
-		calculate: calculate,
+  return {
+    calculate: calculate,
     clear: clear,
     add: add,
     getCalculation:getCalculation
-	}
+  }
 }
