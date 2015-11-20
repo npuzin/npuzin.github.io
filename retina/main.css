@@ -1,8 +1,8 @@
 .image1 {
 	display:inline-block;
 	background-image:url(background-sd.jpg);
-	width: 400px;
-	height: 300px;
+	width: 683px;
+	height: 384px;
 	border:solid 1px black;
 }
 
@@ -10,7 +10,7 @@
 	display:inline-block;	
 	background-image:url(background-hd.jpg);
 	background-size: 100% 100%;
-	width: 400px;
-	height: 300px;
+	width: 683px;
+	height: 384px;
 	border:solid 1px black;
 }
